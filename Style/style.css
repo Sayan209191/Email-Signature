@@ -1,0 +1,87 @@
+#wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    
+}
+.container {
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+.parent {
+    width: 85%;
+    height: 80%;
+    background-color: rgb(51, 51, 240);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    position: relative; 
+    z-index: 1; 
+}
+
+.child {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    position: absolute; 
+    top: 100px; 
+    z-index: 2; 
+    background-color: #fff;
+}
+.child p {
+    font-size: 18px;
+    color: black;
+}
+.child h3 {
+    font-size: 22px;
+    color: black;
+}
+.image-section img {
+    width: 200px;
+    border-radius: 62%;
+}
+.name-section-name{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 25px; */
+}
+.name-section h3, .name-section p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.social-section { 
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.social-section i {
+    font-size:30px
+}
+.social-section .fa-linkedin {
+    color: blue;
+}
+.social-section .fa-x-twitter {
+    color: black;
+}
+.social-section .fa-github {
+    color: rgb(6, 6, 6);
+}
