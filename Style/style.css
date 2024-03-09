@@ -37,6 +37,7 @@
 
 .child {
     width: 80%;
+    height: 52%;
     display: flex;
     justify-content: space-around;
     align-items: center;
