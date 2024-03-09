@@ -5,8 +5,8 @@
     justify-content: center;
     align-items: center;
     background-color: #f0f0f0;
-    
 }
+
 .container {
     width: 80%;
     height: 80%;
@@ -19,6 +19,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .header {
     font-size: 30px;
     font-weight: bold;
@@ -27,7 +28,7 @@
 .parent {
     width: 85%;
     height: 80%;
-    background-color: rgb(51, 51, 240);
+    background-color: #00538C;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -46,6 +47,8 @@
     top: 100px; 
     z-index: 2; 
     background-color: #fff;
+    box-shadow: rgb(59, 58, 58) 5px 5px ;
+    
 }
 .child p {
     font-size: 18px;
@@ -57,8 +60,9 @@
 }
 .image-section img {
     width: 150px;
-    border-radius: 60%;
-    border-color: black;
+    border-radius: 100px;
+    border-color: #00538C;
+
 }
 .name-section-name{
     display: flex;
@@ -66,7 +70,7 @@
     /* gap: 25px; */
 }
 .name-section hr{
-    color: black;
+    border: 1px solid #00538C;
     
 }
 .name-section h3, .name-section p {
@@ -90,4 +94,82 @@
 }
 .social-section .fa-github {
     color: rgb(6, 6, 6);
+}
+
+#links{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        height: 90%;
+    }
+
+    .parent {
+        width: 95%;
+        height: 90%;
+    }
+
+    .child {
+        flex-direction: column;
+        height: auto;
+        width: 95%;
+    }
+
+    .image-section img {
+        width: 100px;
+    }
+
+    .name-section-name {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-section {
+        justify-content: space-around;
+        width: 100%;
+    }
+    #links{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .container {
+        width: 90%;
+        height: 90%;
+    }
+
+    .parent {
+        width: 95%;
+        height: 90%;
+    }
+
+    .child {
+        flex-direction: column;
+        height: 70%;
+        width: 85%;
+    }
+
+    .image-section img {
+        width: 80px;
+    }
+
+    .name-section-name {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-section {
+        margin-top: 10px;
+        justify-content: space-around;
+        width: 85%;
+    }
+    #links{
+        display: flex;
+        flex-direction: column;
+    }
 }
