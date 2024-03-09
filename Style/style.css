@@ -55,13 +55,18 @@
     color: black;
 }
 .image-section img {
-    width: 200px;
-    border-radius: 62%;
+    width: 150px;
+    border-radius: 60%;
+    border-color: black;
 }
 .name-section-name{
     display: flex;
     justify-content: space-between;
     /* gap: 25px; */
+}
+.name-section hr{
+    color: black;
+    
 }
 .name-section h3, .name-section p {
     margin: 0;
